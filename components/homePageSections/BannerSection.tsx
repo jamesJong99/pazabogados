@@ -1,6 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
 // import { sequenceData } from '@/lib/homePageData';
-import { goMadarm  } from '@/lib/goMadam';
 import { Logo } from '../Header/logo';
 
 const BannerSection = () => {
