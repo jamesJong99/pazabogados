@@ -1,6 +1,6 @@
 "use client"
 import "./globals.css";
-import { CarouselSection, BannerSection, FAQSection } from "@/components/homePageSections"
+import { CarouselSection, BannerSection, FAQSection, ProductionSection } from "@/components/homePageSections"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import { useEffect } from "react";
@@ -20,6 +20,7 @@ const Home = () => {
       <Header />
       <BannerSection />
       <CarouselSection />
+      <ProductionSection />
       <FAQSection />
       <Footer />
     </>
