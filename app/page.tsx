@@ -4,33 +4,17 @@ import { CarouselSection, BannerSection, ProductionSection, ProblemSection, Pric
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import { useEffect } from "react";
-var items = document.querySelectorAll(".fade div, .fade li, .fadeup, .fadeleft, .fadelay, .fade tr");
-  // check if an element is in viewport
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.top + (rect.height/2) <= (window.innerHeight || document.documentElement.clientHeight)
-
-    );
-  }
-
-
-    function callbackFunc() {
-      for (var i = 0; i < items.length; i++) {
-        if (isElementInViewport(items[i])) {
-          items[i].classList.add("in-view");
-        }
-      }
-    }
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Home = () => {
-  useEffect(()=> {
-    items = document.querySelectorAll(".fade div, .fade li, .fadeup, .fadeleft, .fadelay, .fade tr");
-    window.addEventListener("load", callbackFunc);
-    window.addEventListener("resize", callbackFunc);
-    window.addEventListener("scroll", callbackFunc);
-  }, [])
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: false,
+      offset: 50,
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <Header />

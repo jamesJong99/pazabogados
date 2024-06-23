@@ -1,14 +1,14 @@
 import { inviteList } from "@/lib/homePageData";
 export const CarouselSection = () => (
   <section className="servicios">
-    <p className="antetitulo fadeup  ">ÁREAS DE PRÁCTICA</p>
-    <h1 className="fadeup azul  ">
+    <p className="antetitulo in-view" data-aos="fade-up">ÁREAS DE PRÁCTICA</p>
+    <h1 className="azul in-view" data-aos="fade-up">
     Especialistas en Herencias <br />{" "}
-      <span className="celeste fadeup  ">puedes confiar</span>
+      <span className="celeste fade-up in-view">puedes confiar</span>
     </h1>
     <div className="full-width lista-servicios">
       {inviteList.map((item, index) => (
-        <div key={index} className="servicio fadeup">
+        <div key={index} className="servicio in-view" data-aos="fade-up">
           <a href={item.link}>
             <img
               className="m-auto"

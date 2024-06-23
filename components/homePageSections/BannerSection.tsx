@@ -13,7 +13,7 @@ const BannerSection = () => {
         height={750}
         alt="Abogados de confianza"
       />
-    <section className="hero">
+    <section className="hero in-view">
       <p className="titulo">
         ¿Ningún abogado en la familia? ahor atienes{" "}
         <span className="celeste">un equipo.</span>{" "}

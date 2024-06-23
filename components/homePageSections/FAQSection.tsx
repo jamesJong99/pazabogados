@@ -2,7 +2,7 @@ import { others } from "@/lib/homePageData";
 import Link from 'next/link';
 export const FAQSection = () => (
     <footer>
-        <div className="logofooter">
+        <div className="logofooter" data-aos="fade-right">
             <a href="/">
                 <img
                     alt="Logo"
@@ -23,7 +23,7 @@ export const FAQSection = () => (
         </div>
         {
             others.map((item, index) => (
-                <div key={index}>
+                <div key={index} data-aos="fade-up">
                     <p>{item.title}</p>
                     {item.content.map(cont => (
                         <Link href={cont.link}>{cont.name}</Link>

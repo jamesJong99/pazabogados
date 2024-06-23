@@ -1,26 +1,27 @@
 export const ProductionSection = () => (
-  <section className="contacto fondo-azul" id="contacto">
-    <h3 className="fh1 fadeup  ">
+  <section className="contacto fondo-azul" id="contacto" data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom">
+    <h3 className="fh1 fadeup in-view" data-aos="fade-up">
       ¿Necesitas abogados <span className="celeste">confiables?</span>
     </h3>
-    <p className="fadelay  ">Envíanos un mensaje:</p>
+    <p className="fadelay in-view" data-aos="fade-up">Envíanos un mensaje:</p>
     <form method="post" name="myForm" id="myForm">
-      <input name="name" id="name" placeholder="Nombre" required />
-      <input
+      <input data-aos="zoom-out-right" name="name" id="name" placeholder="Nombre" required />
+      <input data-aos="zoom-out-left"
         name="email"
         id="email"
         type="email"
         placeholder="Correo electrónico"
         required
       />
-      <input
+      <input data-aos="zoom-out-right"
         name="tel"
         id="tel"
         type="tel"
         placeholder="Teléfono de contacto"
         minLength={8}
       />
-      <textarea
+      <textarea data-aos="zoom-out-left"
         rows={5}
         name="message"
         id="message"
@@ -28,7 +29,7 @@ export const ProductionSection = () => (
         required
         defaultValue={""}
       />
-      <input
+      <input data-aos="zoom-out-up"
         id="submit"
         name="submit"
         type="submit"
@@ -36,7 +37,7 @@ export const ProductionSection = () => (
         className="boton"
       />
     </form>
-    <div className="grid">
+    <div className="grid" data-aos="zoom-out-left">
       <p>
         Teléfono y Whatsapp <br />
         <span className="celeste">
