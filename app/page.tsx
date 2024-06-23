@@ -20,9 +20,6 @@ const Home = () => {
       <Header />
       <BannerSection />
       <CarouselSection />
-      <ProductionSection />
-      {/* <ProblemSection /> */}
-      {/* <PricingSection/> */}
       <FAQSection />
       <Footer />
     </>
