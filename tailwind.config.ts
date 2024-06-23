@@ -8,7 +8,7 @@ const config = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
     './node_modules/tw-elements/js/**/*.js'
-  ],
+	],
   prefix: "",
   theme: {
     container: {
@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-
+        
         cormorantGaramond: 'Cormorant Garamond',
         ArchivoBLACK: 'Archivo BLACK',
         quicksand: 'Quicksand',
@@ -77,73 +77,6 @@ const config = {
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
-        },
-        "fade-in": {
-          "0%": {
-            opacity: 0
-          },
-          "100%": {
-            opacity: 1
-          },
-        },
-        "fade-out": {
-          "0%": {
-            opacity: 1
-          },
-          "100%": {
-            opacity: 0
-          },
-        },
-        "fade-in-down": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(0, -100%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        "fade-in-top-left": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(-100%, -100%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        "fade-in-top-right": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(100%, -100%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-
-        "fade-in-bottom-left": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(100%, 100%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        "fade-in-bottom-right": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(-100%, 100%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
         },
       },
       animation: {
