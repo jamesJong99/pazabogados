@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Logo = () => {
   return (
-    <div className="max-[415px]:m-auto">
+    <div>
       <Image
         src="/images/logos/logo.png"
         className="h-[72px] w-auto"

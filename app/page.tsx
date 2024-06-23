@@ -1,6 +1,6 @@
 "use client"
 import "./globals.css";
-import { CarouselSection, BannerSection, ProductionSection, ProblemSection, PricingSection, FAQSection } from "@/components/homePageSections"
+import { CarouselSection, BannerSection, FAQSection } from "@/components/homePageSections"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import { useEffect } from "react";

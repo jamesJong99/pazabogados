@@ -25,8 +25,8 @@ export const FAQSection = () => (
             others.map((item, index) => (
                 <div key={index} data-aos="fade-up">
                     <p>{item.title}</p>
-                    {item.content.map(cont => (
-                        <Link href={cont.link}>{cont.name}</Link>
+                    {item.content.map((cont, ind) => (
+                        <Link key={ind} href={cont.link}>{cont.name}</Link>
                     ))}
                 </div>
             ))
