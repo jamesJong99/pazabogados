@@ -10,8 +10,8 @@ export const CarouselSection = () => (
     <div className="full-width lista-servicios">
       {inviteList.map((item, index) => (
         <div key={index} className="servicio in-view" data-aos="fade-up">
-          <Link href={{pathname: '/InvitePage',
-              // query: {id: index},
+          <Link href={{pathname: '/contacts',
+              query: {id: index},
               }} >
             <img
               className="m-auto"
