@@ -1,7 +1,8 @@
 "use client"
 import { useRouter, useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import ContactSection from "@/components/homePageSections/ContactSection";
-const Contacts = () => {
+const ContactsComponent = () => {
     const router = useRouter()
     const searchParams = useSearchParams();
     const id = searchParams.get('id');
@@ -12,4 +13,10 @@ const Contacts = () => {
     );
 }
 
-export default Contacts;
+export default function Contacts () {
+    return(
+        <Suspense>
+            <ContactsComponent />
+        </Suspense>
+    )
+};
