@@ -1,6 +1,7 @@
+import Link from "next/link";
 export const ProductionSection = () => (
   <section className="contacto fondo-azul" id="contacto" data-aos="fade-up"
-  data-aos-anchor-placement="top-bottom">
+    data-aos-anchor-placement="top-bottom">
     <h3 className="fh1 fadeup in-view" data-aos="fade-up">
       ¿Necesitas abogados <span className="celeste">confiables?</span>
     </h3>
@@ -47,9 +48,9 @@ export const ProductionSection = () => (
       <p>
         Email <br />{" "}
         <span className="celeste">
-          <a href="contacto@pazabogados.cl" target="_blank">
-            contacto@cuche.cl
-          </a>
+          <Link href="contacto@pazabogados.cl" target="_blank">
+            contacto@pazabogados.cl
+          </Link>
         </span>{" "}
       </p>
     </div>

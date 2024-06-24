@@ -7,9 +7,9 @@ import Script from 'next/script'
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hook Creatives",
-  description: "Hook Creatives is a advertis page for buisness and ecommerce applications",
-  keywords: 'Hook Creatives'
+  title: "pazabogados",
+  description: "pazabogados is a laywer page for life applications",
+  keywords: 'pazabogados'
 };
 
 export default function RootLayout({

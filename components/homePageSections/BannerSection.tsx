@@ -17,9 +17,16 @@ const BannerSection = () => {
         ¿Ningún abogado en la familia? ahor atienes{" "}
         <span className="celeste">un equipo.</span>{" "}
       </p>
-      <p className="bajada">
-        Si no tienes la suerte de contar con un abogado en tu familia, puedes
-        contar con nosotros.
+      <p className="bajada min-h-[70px]">
+        <TypeAnimation sequence={[
+            'Si no tienes la suerte de contar con un abogado en tu familia, puedes contar con nosotros.',
+            1000,
+            ' Si no tienes la suerte de contar con un abogado en tu familia, puedes contar con nosotros.',
+            1000
+        ]} 
+        wrapper='span'
+        speed={50}
+        repeat={Infinity}></TypeAnimation>
       </p>
     </section>
   </header>

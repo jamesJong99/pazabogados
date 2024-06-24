@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { inviteList } from "@/lib/homePageData";
 export const CarouselSection = () => (
   <section className="servicios">
@@ -9,7 +10,9 @@ export const CarouselSection = () => (
     <div className="full-width lista-servicios">
       {inviteList.map((item, index) => (
         <div key={index} className="servicio in-view" data-aos="fade-up">
-          <a href={item.link}>
+          <Link href={{pathname: '/InvitePage',
+              // query: {id: index},
+              }} >
             <img
               className="m-auto"
               src={item.image}
@@ -22,7 +25,7 @@ export const CarouselSection = () => (
               {item.content}
             </p>
             <p>Más información</p>
-          </a>
+          </Link>
         </div>
       ))}
     </div>

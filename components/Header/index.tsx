@@ -23,7 +23,7 @@ const Navbar = () => {
         {navItems.map(item => (
           <li
             key={item.id}
-            className='p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'
+            className='text-[0.8rem] py-2 px-5 hover:bg-white rounded-full m-2 cursor-pointer duration-300 hover:text-black'
           >
             {item.text}
           </li>
