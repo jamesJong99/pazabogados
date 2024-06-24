@@ -2,7 +2,9 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import Script from 'next/script'
+import { CarouselSection, BannerSection, FAQSection, ProductionSection } from "@/components/homePageSections"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -30,7 +32,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Header />
             {children}
+            <ProductionSection />
+            <FAQSection />
+            <Footer />
           </ThemeProvider>
         </body>
       </html>

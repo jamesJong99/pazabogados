@@ -17,12 +17,8 @@ const Home = () => {
   }, []);
   return (
     <>
-      <Header />
       <BannerSection />
       <CarouselSection />
-      <ProductionSection />
-      <FAQSection />
-      <Footer />
     </>
   )
 }
